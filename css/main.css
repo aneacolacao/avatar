@@ -31,12 +31,30 @@
   font-style: normal;
 }
 
+body{
+	min-width: 100%;
+}
+
+#img-container{
+	width: 800px;
+	height: 800px;
+}
+
+.show, .correction.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
+
 #avatar{
-	width: 1000px;
-	height: 1000px;
+	width: 800px;
+	height: 800px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-size: cover;
 }
 
 #text{
@@ -58,6 +76,7 @@
 	width: 100%;
 	text-align: center;
 	word-wrap: break-word;
+	box-sizing: border-box;
 }
 
 #last{
@@ -73,12 +92,13 @@
 
 #last_c{
 	padding: 0 50px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
 	justify-content: center;
-/*	display:inline-block;*/
 	text-align: center;
+	box-sizing: border-box;
 }
 
 #last_c img{
@@ -115,3 +135,14 @@
 .neg_m_right{
 	margin-right: -15px;
 }
+
+.correction{
+	display: block;
+}
+
+@media only screen and (max-width: 768px){
+	#avatar{
+		/*width: 100%;
+		height: 100%;*/
+	}
+} 
